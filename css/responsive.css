@@ -1,0 +1,44 @@
+/* // Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1200px) { 
+
+
+    
+
+ }
+
+
+
+/* // Tablet devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+
+
+
+ }
+
+
+
+
+
+
+
+/* Small mobile : 320px */
+@media (max-width: 767px) { 
+
+
+
+ }
+
+
+
+
+
+
+
+ /* Large Mobile :480px */
+@media (min-width: 480px) and (max-width: 767px) { 
+
+
+
+
+
+ }
