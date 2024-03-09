@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&amp;display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="css/meanmenu.min.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
   <link rel="stylesheet" href="css/styl.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -20,37 +20,50 @@
   <div class="header-section clear">
     <div class="main-content">
       <div class="header-logo left">
-        <img src="img/ia_200000000.png" alt="">
-        <span>AppAMP Theme</span>
+        <a href="index.html"><img src="img/ia_200000000.png" alt="">
+          <span>AppAMP Theme</span></a>
       </div>
       <div class="header-menu left">
         <div class="primary-menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Live Demo<i class="fas fa-sort-down"></i></a>
-              <ul>
-                <li><a href="index.html">Time Planner App</a></li>
-                <li><a href="healthtracker.html"> Health Tracker App</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Demo Blocks<i class="fas fa-sort-down"></i></a>
-              <ul>
-                <li><a href="headers.html">Headers</a></li>
-                <li><a href="pricing-table-and-arrticcle.html">Pricing Table & Article</a></li>
-                <li><a href="features.html">Features</a></li>
-                <li><a href="team-and-testimonials.html">Team & Testimonails</a></li>
-                <li><a href="gallery-and-video.html">Gallery & Video</a></li>
-                <li><a href="forms-maps-and-footers.html">Forms & Maps & Footers</a></li>
-              </ul>
-            </li>
-          </ul>
+          <nav id="mobile-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="">Live Demo<i class="fas fa-sort-down"></i></a>
+                <ul>
+                  <li><a href="index.html">Time Planner App</a></li>
+                  <li><a href="healthtracker.html"> Health Tracker App</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Demo Blocks<i class="fas fa-sort-down"></i></a>
+                <ul>
+                  <li><a href="headers.html">Headers</a></li>
+                  <li><a href="pricing-table-and-arrticcle.html">Pricing Table & Article</a></li>
+                  <li><a href="features.html">Features</a></li>
+                  <li><a href="team-and-testimonials.html">Team & Testimonails</a></li>
+                  <li><a href="gallery-and-video.html">Gallery & Video</a></li>
+                  <li><a href="forms-maps-and-footers.html">Forms & Maps & Footers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
       <div class="header-button left">
-        <a href="index.html" class="btn">Buy Now</a>
+        <a href="index.html" class="btn m-none">Buy Now</a>
+        <a class="ic-menu-toggle"><i class="fas fa-bars"></i></a>
       </div>
+
     </div>
   </div>
+
+  <div class="ic-sidebar-menu">
+    <button class="sidebar-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="mobile-menu"></div>
+  </div>
+  <div class="body-overlay"></div>
+  <!-- header end -->
 
   <div class="banner-section text-center" style="background: url(img/ia_200000011.jpg) no-repeat center center;">
     <div class="main-content">
@@ -384,9 +397,10 @@
     <p>© Copyright 2021 By Ibrahim Coder - All Rights Reserved</p>
   </div>
 
-
-  <script src="js/jquery.meanmenu.min.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/waypoints.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/meanmenu.js"></script>
 
 </body>
 

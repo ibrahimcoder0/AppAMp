@@ -39,6 +39,74 @@ body,h1,h2,h3,h4,h5,h6,p,a,span{
   font-family: 'Work Sans', sans-serif;
 }
 /* header section */
+
+.ic-sidebar-menu {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  background: #ffffff none repeat scroll 0 0;
+  overflow-y: scroll;
+  -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  z-index: 9999;
+  padding: 0 30px;
+}
+
+.body-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.body-overlay.opened {
+  opacity: 1;
+  visibility: visible;
+}
+.ic-sidebar-menu.opened {
+  right: 0;
+}
+a.ic-menu-toggle{
+    float: right;
+    margin-right: 10px;
+    margin-top: 16px;
+    font-size: 25px;
+}
+a.meanmenu-reveal{
+	display: block !important;
+}
+.mean-container .mean-bar {
+    float: left;
+    width: 100%;
+    position: relative;
+    /* background: #070337; */
+    /* padding: 4px 0; */
+    min-height: 42px;
+    z-index: 0;
+}
+.mean-remove {
+	display: block !important;
+}
+
+
+
+
+
 .header-section {
   background: #fff;
   border: 1px solid #ddd;
